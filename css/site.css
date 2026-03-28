@@ -1,0 +1,960 @@
+/* ============================================
+   Climate Service - Sub-Brand Styles
+   Family of LeaderClimat.ge — 20% different
+   ============================================ */
+
+:root {
+    /* Primary Colors */
+    --primary-blue: #4a87cb;
+    --primary-blue-dark: #114b8c;
+    --dark-navy: #252936;
+    --nav-gray: #515151;
+    --footer-gray: #515151;
+    --accent-teal: #2d9cdb;
+    --orange-accent: #f47629;
+    --red-accent: #df6160;
+
+    /* Text Colors */
+    --text-body: #000000;
+    --text-dark: #333333;
+    --text-heading: #252936;
+    --text-heading-sm: #333333;
+    --text-medium: #555555;
+    --text-light-muted: #b0b0b0;
+
+    /* Background Colors */
+    --bg-body: #ecedf1;
+    --bg-light: #f7f7f7;
+    --bg-lighter: #f4f4f4;
+    --bg-white: #ffffff;
+
+    /* Shadows — matching original LeaderClimat */
+    --shadow-card: 0 13px 14px rgba(0, 0, 0, 0.08);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+    /* Border Radius — sub-brand uses slightly more rounded (12px vs 10px) */
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-xl: 20px;
+    --radius-pill: 50px;
+
+    /* Transitions */
+    --transition-base: all 0.3s ease;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans Georgian', 'Segoe UI', sans-serif;
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    background-color: var(--bg-body);
+}
+
+/* White card sections on gray body */
+main > section,
+main > .section-padding,
+main > .cta-banner,
+main > .parent-company-banner {
+    /* Sections float as white cards on gray background */
+}
+
+/* Ensure white content areas stand out on gray bg */
+.content-section {
+    background-color: #fff;
+    border-radius: var(--radius-md);
+    padding: 60px 0;
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-heading);
+}
+
+h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-heading-sm);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+    color: var(--text-medium);
+}
+
+/* ============================================
+   Utility Classes - Backgrounds
+   ============================================ */
+
+.bg-dark-navy { background-color: var(--dark-navy) !important; }
+.bg-nav-gray { background-color: var(--nav-gray) !important; }
+.bg-footer-gray { background-color: var(--footer-gray) !important; }
+.bg-primary-blue { background-color: var(--primary-blue) !important; }
+.bg-light-section { background-color: var(--bg-light) !important; }
+.bg-accent-teal { background-color: var(--accent-teal) !important; }
+
+/* ============================================
+   Utility Classes - Text
+   ============================================ */
+
+.text-accent { color: var(--accent-teal) !important; }
+.text-orange { color: var(--orange-accent) !important; }
+.text-primary-blue { color: var(--primary-blue) !important; }
+.text-light-muted { color: var(--text-light-muted) !important; }
+
+/* ============================================
+   Buttons — Blue pill primary (matching original)
+   ============================================ */
+
+.btn-primary-blue {
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-base);
+}
+.btn-primary-blue:hover {
+    background-color: var(--primary-blue-dark);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-orange {
+    background: transparent;
+    color: var(--orange-accent);
+    border: 2px solid var(--orange-accent);
+    padding: 10px 28px;
+    font-weight: 600;
+    transition: var(--transition-base);
+}
+.btn-orange:hover {
+    background-color: var(--orange-accent);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-blue {
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-base);
+}
+.btn-blue:hover {
+    background-color: var(--primary-blue-dark);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline-blue {
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    background: transparent;
+    padding: 10px 28px;
+    font-weight: 600;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-base);
+}
+.btn-outline-blue:hover {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+.btn-outline-orange {
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    background: transparent;
+    padding: 10px 28px;
+    font-weight: 600;
+    transition: var(--transition-base);
+}
+.btn-outline-orange:hover {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+
+/* Badge — teal accent for sub-brand */
+.bg-orange { background-color: var(--accent-teal) !important; }
+
+/* ============================================
+   Section Spacing
+   ============================================ */
+
+.section-padding { padding: 80px 0; }
+.section-padding-sm { padding: 50px 0; }
+
+/* ============================================
+   Section Title Pattern
+   ============================================ */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.section-title .title-line {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-blue), var(--accent-teal));
+    margin: 0 auto;
+}
+
+/* ============================================
+   Top Bar — Blue (sub-brand unique element)
+   ============================================ */
+
+.top-bar {
+    font-size: 0.9rem;
+}
+.top-bar a:hover {
+    color: #fff !important;
+    opacity: 0.85;
+}
+
+/* ============================================
+   Navbar — #515151 gray (matching parent brand)
+   ============================================ */
+
+.navbar {
+    transition: var(--transition-base);
+}
+.navbar .nav-link {
+    font-weight: 500;
+    padding: 8px 16px !important;
+    color: rgba(255,255,255,0.9) !important;
+    transition: var(--transition-base);
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #fff !important;
+    opacity: 1;
+}
+
+/* ============================================
+   Hero Section / Carousel — gray+blue overlay (lighter)
+   ============================================ */
+
+.hero-slide {
+    position: relative;
+    min-height: 550px;
+    height: 100vh;
+    max-height: 700px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(81,81,81,0.85) 0%, rgba(74,135,203,0.6) 100%);
+}
+.hero-slide .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.hero-slide h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: #fff;
+}
+.hero-slide p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.hero-overlay {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.hero-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(81,81,81,0.85) 0%, rgba(74,135,203,0.6) 100%);
+}
+.hero-overlay .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ============================================
+   Service Cards — matching original (soft shadow, blue hover)
+   ============================================ */
+
+.service-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-base);
+    height: 100%;
+    border: 1px solid #eee;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-blue);
+}
+.service-card .icon-wrap {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+    color: var(--primary-blue);
+    transition: var(--transition-base);
+}
+.service-card:hover .icon-wrap {
+    background-color: var(--primary-blue);
+    color: #fff;
+}
+.service-card h4 {
+    margin-bottom: 12px;
+    font-size: 1.15rem;
+}
+.service-card p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+}
+
+/* Service card - horizontal variant for services page */
+.service-card-horizontal {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-base);
+    height: 100%;
+    border: 1px solid #eee;
+}
+.service-card-horizontal:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-blue);
+}
+.service-card-horizontal .icon-wrap-lg {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+}
+.service-card-horizontal h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.service-card-horizontal p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+.service-card-horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.service-card-horizontal ul li {
+    padding: 4px 0;
+    color: var(--text-medium);
+    font-size: 0.9rem;
+}
+.service-card-horizontal ul li::before {
+    content: '\2713';
+    color: var(--accent-teal);
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+/* Logo lightening for dark backgrounds */
+.img-logo-light {
+    filter: brightness(0) invert(1);
+}
+
+/* ============================================
+   Page Header Banner — gray-blue overlay
+   ============================================ */
+
+.page-header {
+    position: relative;
+    padding: 80px 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(81,81,81,0.82) 0%, rgba(74,135,203,0.65) 100%);
+}
+.page-header h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.page-header .breadcrumb-custom {
+    position: relative;
+    z-index: 2;
+}
+.page-header .breadcrumb-custom a {
+    color: var(--accent-teal);
+    text-decoration: none;
+}
+.page-header .breadcrumb-custom a:hover {
+    text-decoration: underline;
+}
+.page-header .breadcrumb-custom span {
+    color: #ccc;
+}
+
+/* ============================================
+   Gallery Grid
+   ============================================ */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+.gallery-item {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    aspect-ratio: 4/3;
+    display: block;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-base);
+}
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ============================================
+   Counter / Stat Box — #515151 gray bg
+   ============================================ */
+
+.stat-box {
+    text-align: center;
+    padding: 30px 20px;
+}
+.stat-box .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+.stat-box .stat-label {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+/* ============================================
+   Brand Logo Strip
+   ============================================ */
+
+.brand-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: var(--transition-base);
+}
+.brand-logo-item:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.brand-logo-item img {
+    max-height: 50px;
+    max-width: 120px;
+    object-fit: contain;
+}
+
+/* ============================================
+   CTA Banner — blue gradient (not navy)
+   ============================================ */
+
+.cta-banner {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #3a6faa 100%);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+.cta-banner h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+.cta-banner p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+    color: #fff;
+}
+.cta-banner .phone-number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ============================================
+   Contact Info Cards
+   ============================================ */
+
+.contact-info-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-base);
+    height: 100%;
+}
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+.contact-info-card .icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--primary-blue);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 28px;
+}
+.contact-info-card h5 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.contact-info-card p,
+.contact-info-card a {
+    color: var(--text-medium);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+.contact-info-card a:hover {
+    color: var(--primary-blue);
+}
+
+/* ============================================
+   Contact Form
+   ============================================ */
+
+.contact-form .form-control {
+    border-radius: var(--radius-sm);
+    border: 1px solid #ddd;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    transition: var(--transition-base);
+}
+.contact-form .form-control:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(74, 135, 203, 0.15);
+}
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+/* ============================================
+   Additional Services (list style)
+   ============================================ */
+
+.additional-service-item {
+    padding: 20px;
+    transition: var(--transition-base);
+}
+.additional-service-item .icon-sm {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: rgba(74, 135, 203, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--primary-blue);
+    transition: var(--transition-base);
+}
+.additional-service-item:hover .icon-sm {
+    background-color: var(--accent-teal);
+    color: #fff;
+}
+.additional-service-item h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.additional-service-item p {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* ============================================
+   About Page - Feature Boxes
+   ============================================ */
+
+.feature-box {
+    text-align: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-base);
+    height: 100%;
+}
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+.feature-box .icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(74, 135, 203, 0.1);
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 28px;
+    transition: var(--transition-base);
+}
+.feature-box:hover .icon-circle {
+    background-color: var(--accent-teal);
+    color: #fff;
+}
+.feature-box h5 {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+.feature-box p {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   Footer — #515151 gray
+   ============================================ */
+
+footer a.text-light-muted:hover {
+    color: var(--accent-teal) !important;
+}
+
+/* Footer heading accent — teal instead of orange */
+footer .text-accent-heading {
+    color: var(--accent-teal) !important;
+}
+
+/* ============================================
+   Miscellaneous
+   ============================================ */
+
+.label-sm {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.img-rounded {
+    border-radius: var(--radius-lg);
+}
+
+/* Success alert */
+.alert-success-custom {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: var(--radius-md);
+    padding: 20px;
+    text-align: center;
+}
+
+/* ============================================
+   Section Divider — subtle blue gradient (sub-brand unique)
+   ============================================ */
+
+.section-divider {
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, var(--accent-teal) 50%, transparent 100%);
+    border: none;
+    margin: 0;
+    opacity: 0.3;
+}
+
+/* ============================================
+   Parent Company Trust Badge
+   ============================================ */
+
+.parent-company-banner {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #f8fafe 0%, #eef4fb 50%, #f7f7f7 100%);
+    border-top: 2px solid rgba(74, 135, 203, 0.15);
+    border-bottom: 2px solid rgba(74, 135, 203, 0.15);
+}
+
+.trust-badge {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.trust-badge-inner {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    padding: 28px 36px;
+    box-shadow: 0 2px 12px rgba(74, 135, 203, 0.08);
+    border: 1px solid rgba(74, 135, 203, 0.12);
+    position: relative;
+}
+
+.trust-badge-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.trust-shield {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-blue), #3a6faa);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.trust-badge-logo-img {
+    height: 36px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: var(--transition-base);
+}
+
+.trust-badge-inner:hover .trust-badge-logo-img {
+    opacity: 1;
+}
+
+.trust-badge-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.trust-badge-headline {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.trust-badge-headline strong {
+    color: var(--primary-blue);
+}
+
+.trust-badge-stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trust-stat {
+    font-size: 0.82rem;
+    color: var(--text-medium);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.trust-stat i {
+    color: var(--accent-teal);
+    font-size: 0.85rem;
+}
+
+.trust-badge-cta {
+    flex-shrink: 0;
+}
+
+.trust-badge-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border: 1.5px solid var(--primary-blue);
+    border-radius: var(--radius-pill);
+    transition: var(--transition-base);
+    white-space: nowrap;
+}
+
+.trust-badge-link:hover {
+    background-color: var(--primary-blue);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(74, 135, 203, 0.25);
+}
+
+/* Footer parent company line */
+.footer-parent-company {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-parent-logo {
+    height: 20px;
+    object-fit: contain;
+    opacity: 0.7;
+    filter: brightness(0) invert(1);
+}
+
+.footer-parent-text {
+    font-size: 0.8rem;
+    color: var(--text-light-muted);
+}
+
+.footer-parent-text a {
+    color: var(--text-light-muted);
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.footer-parent-text a:hover {
+    color: var(--accent-teal);
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 767px) {
+    .trust-badge-inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 20px;
+        gap: 16px;
+    }
+
+    .trust-badge-logo {
+        justify-content: center;
+    }
+
+    .trust-badge-stats {
+        justify-content: center;
+    }
+
+    .footer-parent-company {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-slide {
+        min-height: 450px;
+        max-height: 550px;
+    }
+    .hero-slide h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    .section-padding { padding: 50px 0; }
+    .hero-slide {
+        min-height: 400px;
+        max-height: 500px;
+    }
+    .hero-slide h1 {
+        font-size: 1.8rem;
+    }
+    .hero-slide p {
+        font-size: 1rem;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 8px;
+    }
+    .stat-box .stat-number {
+        font-size: 1.8rem;
+    }
+    .cta-banner .phone-number {
+        font-size: 1.5rem;
+    }
+    .top-bar {
+        font-size: 0.8rem;
+    }
+}
